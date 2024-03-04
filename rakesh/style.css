@@ -1,0 +1,30 @@
+
+/*---------------flex basis-------*/
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.one{
+    background-color: black;
+    margin: 5px;
+    height: 100px;
+    flex-basis: 20%;
+}
+
+@media screen and (max-width:800px){
+    .one{
+        background-color: aqua;
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .one{
+        background-color: yellowgreen;
+        flex-basis: 100%;
+    }
+}
