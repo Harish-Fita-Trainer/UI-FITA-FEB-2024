@@ -11,14 +11,13 @@
     margin:5px ;
 }
 .form-main-container {
-    display: grid;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 label{
     width:140px;
-    display: inline-block;
     margin: 0.2cm;
     font-size: 1.5em;
     font-weight: bold;
