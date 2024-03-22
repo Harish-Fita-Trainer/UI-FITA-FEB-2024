@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./formstyle.css" />
+    <script src="./validation.js"></script>
+</head>
+
+<body>
+    <header><h1>Validation Form</h1></header>
+    <div class="form-container">
+        <div class="form-control">
+            <label for="Name">Name</label>
+            <input type="text" id="Name">
+            <span id="Name_error"></span>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <span id="email_error"></span>
+        </div>
+        <div class="form-control">
+            <label for="phone">Phone</label>
+            <input type="number" id="phone">
+            <span id="phone_error"></span>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <span id="password_error"></span>
+        </div>
+        <div class="form-control">
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" id="confirmpassword">
+            <span id="confirmpassword_error"></span>
+        </div>
+        <div class="form-control">
+            <button type="button" id="save_btn">Save</button>
+        </div>
+        <div class="form-control">
+            <p id="message" class="message_container"></p>
+        </div>
+
+    </div>
+</body>
+
+</html>
