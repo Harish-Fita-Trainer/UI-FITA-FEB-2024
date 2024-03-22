@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title>Gradient</title>
+    <style>
+        .linear-gradient{
+            width: 300px;
+            height: 200px;
+            background: linear-gradient(rgba(241, 139, 5, 0.959), rgba(248, 233, 233, 0.904), rgb(7, 131, 7) );
+        }
+        .redial-gradient{
+            margin: 5px;
+            width: 300px;
+            height: 200px;
+            background: radial-gradient(circle closest-side at center, yellow, white, black);
+        }
+        .redial-gradient-ellipse{
+            margin: 5px;
+            width: 300px;
+            height: 200px;
+            background: radial-gradient(ellipse closest-side at center, green, red, blue);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="linear-gradient"></div>
+    <div class="redial-gradient"></div>
+    <div class="redial-gradient-ellipse"></div>
+    
+</body>
+</html>

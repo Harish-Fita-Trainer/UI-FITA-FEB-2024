@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 103vh;
+    position: relative;
+    background: linear-gradient(45deg, blue, red);
+}
+header{
+    position: fixed;
+    top: 0;
+}
+h1{
+    color: white;
+}
+
+.form-container{
+    width: 400px;
+    background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 10px 20px 25px rgb(0,0,0.3);
+}
+
+.form-control{
+    margin: 5px;
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-control label{
+    font-size: 20px;
+}
+
+.form-control input{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+.form-control input:focus{
+    border: 3px solid green;
+}
+#save_btn{
+    color: white;
+    font-size: 15px;
+    background: rgb(48, 110, 190);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.success {
+    color: green;
+    font-size: 20px;
+}
+
+.failure {
+    color: red;
+    font-size: 20px;
+}
+
+

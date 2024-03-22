@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border: 5px solid black;
+            transition-duration: 2s;
+            margin: 20px;
+            text-align: center;
+        }
+        #translate:hover{
+            transform: translate(30px, 40px);
+        }
+        #rotate:hover{
+            transform: rotate(-90deg);
+        }
+        #scale:hover{
+            transform: scale(.5);
+        }
+        #skew:hover{
+            transform: skew(30deg, 30deg);
+        }
+    </style>
+</head>
+<body>
+
+        <div id="translate">translate</div>
+        <div id="rotate">rotate</div>
+        <div id="scale">scale</div>
+        <div id="skew">skew</div>
+    
+</body>
+</html>

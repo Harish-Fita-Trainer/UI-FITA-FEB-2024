@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <div class="form-control">
+            <div class="form-control-main">
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" id="confirmpassword">
+            </div>
+            <div class="form-message-container">
+                <p id="confirmpassword_message"></p>
+            </div>
+        </div>
+        <div class="form-control">
+            <label for="department">Department</label>
+            <select id="department">
+                <option value="">Select</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="Mech">Mech</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <button type="button" onclick="OnSave()" id="save_btn">Save</button>
+        </div>
+        <div class="form-control">
+            <p id="message" class="message_container"></p>
+        </div>
+    </div>
+</body>
+
+</html>
