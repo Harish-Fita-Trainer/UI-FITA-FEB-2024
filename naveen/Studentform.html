@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./Studentform.js"></script>
+</head>
+<style>
+    label {
+        width: 120px;
+        display: flex;
+        margin: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: aqua;
+    }
+
+    input {
+        padding: 5px;
+        margin: 5px;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+    .form-header-container {
+        display: flex;
+        justify-content: center;
+        color: aqua;
+
+    }
+
+    .form-main-container {
+
+        flex-direction: row;
+        align-items: center;
+        position: center;
+    }
+
+    .form-controls.text-input {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .form-controls.radio-input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-controls.date-input {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .form-controls.number-input {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-footer-container {
+        display: flex;
+        justify-content: center;
+        color: aqua;
+    }
+
+    form {
+
+        width: 28rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        border-radius: 25px;
+        border-left: 1px solid rgba(255, 255, 255, 3);
+        border-top: 1px solid rgba(255, 255, 255, 3);
+    }
+
+
+    body {
+        background-image: url(srm-college-of-engineering.jpeg);
+    }
+
+    @media (orientation:landscape) {
+        .main {
+            flex-direction: row;
+        }
+    }
+</style>
+
+<body>
+    <form class="form-container">
+        <div class="form-header-container">
+            <h3>Student Registration</h3>
+        </div>
+
+        <div class="form-main-container">
+            <div class="form-controls text-input">
+                <label for="student_name">Name</label>
+                <input type="text" id="student_name" maxlength="15" required />
+            </div>
+            <div class="form-message-container">
+                <p id="student_name_message"></p>
+            </div>
+            <div class="form-controls date-input">
+                <label for="DOB">DOB</label>
+                <input class="input_date" id="DOB" type="date" />
+            </div>
+            <div class="form-controls number-input">
+                <label for="Age">Age</label>
+                <input class="text" id="Age" maxlength="3" required />
+            </div>
+
+            <div class="form-controls radio-input">
+                <label for="male_gender">Gender*</label>
+                <input class="input_radio" id="male_gender" name="gender" type="radio" />male
+                <input class="input radio" name="gender" type="radio" />female
+            </div>
+            <div class="form-controls text-input">
+                <label for="Address">Address</label>
+                <input class="text" id="Address">
+            </div>
+            <div class="form-message-container">
+                <p id="Address_message"></p>
+            </div>
+            <div class="form-controls text-input">
+                <label for="Father_name">Father_name</label>
+                <input class="text" id="Father_name" maxlength="15">
+            </div>
+            <div class="form-message-container">
+                <p id="Father_name_message"></p>
+            </div>
+            <div class="form-controls text-input">
+                <label for="Mother_name">Mother_name</label>
+                <input class="text" id="Mother_name" maxlength="15">
+            </div>
+            <div class="form-message-container">
+                <p id="Mother_name_message"></p>
+            </div>
+            <div class="form-controls text-input">
+                <label for="phone_number">phone_number</label>
+                <input class="text" id="phone_number" maxlength="10">
+            </div>
+            <div class="form-message-container">
+                <p id="phone_number"></p>
+            </div>
+            <div class="form-controls text-input">
+                <label for="Password">password</label>
+                <input class="text" id="password" maxlength="10">
+            </div>
+            <div class="form-message-container">
+                <p id="password_message"></p>
+            </div>
+            <div class="form-controls text-input">
+                <label for="confirmpassword">confirmpassword</label>
+                <input class="text" id="confirmpassword" maxlength="10">
+            </div>
+            <div class="form-message-container">
+                <p id="confirmpassword_message"></p>
+            </div>
+
+
+            <div class="form-footer-container">
+                <div class="form-control">
+                    <button type="button" onclick="OnSave()" id="save_btn">Save</button>
+                </div>
+                <div class="form-control">
+                    <p id="message" class="message_container"></p>
+                </div>
+            </div>
+
+
+    </form>
+</body>
+
+</html>
