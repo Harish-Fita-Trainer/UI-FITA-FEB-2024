@@ -16,7 +16,7 @@ function OnSave() {
         document.getElementById("Name_error").innerText = "Enter The name";
     }
     else{
-        Name_error.innerHTML =""
+        document.getElementById("Name_error").innerText= ""
     }
 //------------validation of Email-------//
     if( email === "")
@@ -25,24 +25,28 @@ function OnSave() {
         document.getElementById("email_error").innerText = "Enter the Email";
     }
     else{
-        email_error.innerHTML =""
+        document.getElementById("email_error").innerText= ""
+        
     }
 //------------phone number validation------------//
-    if(phone === "")
+    if(phone.length <=10)
     {
         document.getElementById("phone_error").setAttribute("class", "failure")
-        document.getElementById("phone_error").innerText = "Enter your Number";
+        document.getElementById("phone_error").innerText = "phone number require min 10 char";
     }
     else{
-        phone_error.innerHTML = ""
+        document.getElementById("phone_error").innerText= ""
+        
     }
+   // if(phone)
 //--------------password validation-----------------//
     if (pwd === ""){
         document.getElementById("password_error").setAttribute("class", "failure")
         document.getElementById("password_error").innerText = "Enter the Password";
     }
     else{
-        password_error.innerHTML = ""
+        document.getElementById("password_error").innerText= ""
+        
     }
 //-----------------confirmpassword validation---------//    
     if (cpwd === ""){
@@ -50,7 +54,8 @@ function OnSave() {
         document.getElementById("confirmpassword_error").innerText = "Enter Confirmpassword";
     }
     else {
-        confirmpassword_error.innerHTML = ""
+        document.getElementById("confirmpassword_error").innerText= ""
+        
     }
 
     if (pwd === cpwd) {
