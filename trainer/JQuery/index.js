@@ -25,9 +25,13 @@ function OnDepartmentChange(event) {
 
 window.onload = function () {
     console.log("window onload")
-    //document.getElementById("save_btn").addEventListener('click', OnSave);
-    document.getElementById("department").addEventListener('change', OnDepartmentChange);
+    console.log("Is Jquery Loaded", $);
 
+    $(".form-container .form-control #department")
+        .off('change')
+        .on('change', function (params) {
+            console.log("testxadfsd", params)
+        })
 }
 
 
