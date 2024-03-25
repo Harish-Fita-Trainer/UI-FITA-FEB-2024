@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./style.css">
+    <script src="./validation.js">
+
+    </script>
+    </head>
+<body class="background">
+    <div class="header">
+        <div id="logo">Jaga</div>
+        
+       <div class="fb" id="b"><a href="">home</a></div>
+       <div class="fb" id="b"><a href="">about</a></div>
+       <div class="fb"id="b"><a href="">Apply</a></div>
+       <div class="fb"id="b"><a href="">fee structure</a></div>
+       <div class="menu">
+        <div class="menuline"></div>
+        <div class="menuline"></div>
+        <div class="menuline"></div>
+      </div>
+    </div>
+  
+    <div class="main-container">
+      <form> 
+      <div class="main-control">
+      <label for="name_">Name</label>
+        <input type="text" class="name" id="name_">
+           <span id="nmessage"></span>
+      </div>
+      <div class="main-control">
+        <label for="regno_">Regno</label>
+        <input type="text" id="regno_" class="regno">
+        <span id="regmessage"></span>
+
+      </div>
+      <div class="main-control">
+        <label for="department1">Choose Department</label>
+        <select id="department1">
+            <option value="0">Select Department</option>
+            <option value="IT">IT</option>
+            <option value="CSE">CSE</option>
+            <option value="MECH">MECH</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="BME">BME</option>
+            <option value="RAA">RAA</option>
+            <option value="AI">AI</option>
+         </select>
+        <span id="depmessage"></span>
+         </div>
+      <div class="main-control">
+        <label for="dob_">Dob</label>
+        <input type="date" id="dob_" class="dob">
+        <span id="dobmessage"></span>
+        
+      </div>
+      <div class="main-control">
+        <label for="age_">Age</label>
+        <input type="text" id="age_" class="age">
+        <span id="agemessage"></span>
+
+      </div>
+       <div class="main-control">
+        <label >Gender</label>
+        <input type="radio" id="gender_m" name="gender" value="male">
+        <label for="gender_m">Male</label>
+        <input type="radio" id="gender_f" name="gender" value="Female">
+        <label for="gender_f">Female</label>
+      </div>
+      <div class="main-control">
+        <label for="phonenumber_">PhoneNumber</label>
+        <input  type="text" id="phonenumber_" class="phonenumber">
+        <span id="pmessage"></span>
+
+      </div>
+      <div class="main-control">
+        <label for="email_">Email</label>
+        <input type="email" id="email_" class="email">
+        <span id="emessage"></span>
+      </div>
+      <div class="main-control">
+        <label for="password_">Password</label>
+        <input  type="password" id="password_" class="password">
+        <span id="pwdmessage"></span>
+
+      </div>
+      <div class="main-control">
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" class="confirm-password">
+        <span id="cpwdmessage"></span>
+      </div>
+      <div class="main-control">
+        <label for="Profile_picture">Profilepicture</label>
+        <input type="file" id="Profile_picture" accept=".jpg, .jpeg, .png]" class="Profile-picture">
+        <span id="photomessage"></span>
+      </div>
+      <div class="main-control"> 
+       <button type="button" id="submit">save</button> 
+      </div>
+      </div>
+       </form>  
+<div class="footer">footer</div>
+    
+</body>
+</html>

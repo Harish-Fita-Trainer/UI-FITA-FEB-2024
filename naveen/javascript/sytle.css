@@ -1,0 +1,88 @@
+label {
+    width: 120px;
+    display: flex;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: aqua;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.form-header-container {
+    display: flex;
+    justify-content: center;
+    color: aqua;
+
+}
+
+.form-main-container {
+
+    flex-direction: row;
+    align-items: center;
+    position: center;
+}
+
+.form-controls.text-input {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.form-controls.radio-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-controls.date-input {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.form-controls.number-input {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.form-footer-container {
+    display: flex;
+    justify-content: center;
+    color: aqua;
+}
+
+form {
+
+    width: 28rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 25px;
+    border-left: 1px solid rgba(255, 255, 255, 3);
+    border-top: 1px solid rgba(255, 255, 255, 3);
+}
+
+
+body {
+    background-image: url(srm-college-of-engineering.jpeg);
+}
+
+@media (orientation:landscape) {
+    .main {
+        flex-direction: row;
+    }
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="./style.css">
@@ -6,14 +6,15 @@
     </head>
     <body>
     <div class="student-form">
-    <form class="form-container">
+    <div class="form-container">
     <div class="form-header-container">
         <h2>Students Registration Form </h2>
     </div>
     <div class="form-main-container">
         <div>
             <label for="first_name">Name</label>
-            <input type="text" class="input-text" id="first_name"  maxlength="10" requireds/>
+            <input type="text" class="input-text" id="first_name"/>
+            <p id="name" class="first_name-container"></p>
         </div>
         <div>
             <label for="Mobile no"> Mobile No</label>
@@ -49,9 +50,8 @@
             <input class="input-passwords" id="password" type="password" required/>
         </div>
         <div>
-            <label for="Confirmpassword"> Confirm Password</label>
-            <input class="input-confirmpasswords" id="Confirm password" type="password" required/>
-
+            <label for="confirmpassword">Confirm password</label>
+            <input class="input-confirmpasswords" id="confirmpassword" type="password" required/>
         </div>
     </div>
     <div class="form-footer-container">
@@ -60,11 +60,11 @@
             <button type="rest" class="button-secondary" id="rest_btn"> rest</button>
         </div>
         <div class="form-control">
-            <p id="message" class="message_container"></p>
+            <p id="message" onclick="onsubmit()" class="message_container"></p>
         </div>
 
     </div>
-    </form>
+</div>
 </div>
     </body>
 </html>
