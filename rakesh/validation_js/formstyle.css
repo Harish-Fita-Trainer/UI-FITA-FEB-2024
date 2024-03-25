@@ -10,6 +10,7 @@ body{
     height: 103vh;
     position: relative;
     background: linear-gradient(45deg, blue, red);
+    font-family: sans-serif;
 }
 header{
     position: fixed;
@@ -39,6 +40,7 @@ h1{
 }
 
 .form-control input{
+    outline: 0;
     border: 2px solid black;
     border-radius: 5px;
     font-size: 20px;
@@ -60,12 +62,15 @@ h1{
 
 .success {
     color: green;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .failure {
     color: red;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-
+.gender-box{
+    display: flex;
+    padding: 3px;
+}
