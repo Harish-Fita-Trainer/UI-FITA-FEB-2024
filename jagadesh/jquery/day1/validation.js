@@ -128,7 +128,7 @@
  {
     $("#agemessage").text("");
 
-     //document.getElementById("agemessage").innerText="";
+     //document.getElementById("agemessage")/nnerText="";
   
  }
  else {
