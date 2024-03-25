@@ -36,11 +36,11 @@ else{
 }
 //------validation of password------//
 if (password === confirmpassword) {
-    document.getElementById("message").setAttribute("class", "success")
+    document.getElementById("message").setAttribute("class","success")
     document.getElementById("message").innerText = "password matched";
 }
 else {
-    document.getElementById("message").setAttribute("class", "failure")
+    document.getElementById("message").setAttribute("class","failure")
     document.getElementById("message").innerText = "password not matched";
 }
 }
