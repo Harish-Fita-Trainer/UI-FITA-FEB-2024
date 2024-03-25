@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./UI-form.css">
+        <script src="./UI-form.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1>ANNA UNIVERSITY</h1> 
+         </header>
+         <div class="logo">
+            <img src="logo.png"/>
+         </div>
+    <div class="student-form">
+    <div class="form-container">
+    <div class="form-header-container">
+        <h3>Students Registration Form </h3>
+    </div>
+    <div class="form-main-container">
+        <div class="form-control">
+            <label for="Name">Name</label>
+            <input type="text" class="input-text" id="Name"/>
+            <span id="Name_error"></span>
+            <div><p id="Name_error" class="name-container"></p></div>
+        </div>
+        <div class="form-control">
+            <label for="Mobile No"> Mobile No</label>
+            <input type="text" class="input-number" id="Mobile No" /> 
+            <span id="Mobile_No_error"></span>
+            <p id="Mobile_No_error" class="Mobile_No-container"></p>
+        </div>
+        <div class="form-control">
+            <label for="email_id">Email-ID</label>
+            <input type="email" class="input-email" id="email_id"/>
+            <span id="email_id_error"></span>
+        </div>
+        <div class="form-control">
+            <label for="div-dob"> DOB</label>
+            <input type="date" class="input-date" id="div-dob"/>
+            <span id="div-dob_error"></span>
+        </div>
+        <div class="form-control">
+            <label for="gender">Gender</label>
+            <input class="input-radio" id="gender" name="gender" type="radio" checked/>Male 
+            <input class="input-radio" id="gender" name="gender" type="radio"/>Female
+            <input class="input-radio" id="gender" name="gender" type="radio"/>Others
+            <span id="gender_error"></span>
+        </div>
+        <div class="form-control">
+            <label for="department">Department</label>
+            <select class="input-department" id="department">
+            <option value="000">Select Department</option>
+            <option value="001">CSE</option>
+            <option value="002">IT</option>
+            <option value="003">ECE</option>
+            <option value="004">MECH</option>
+            <option value="005">ROBOTICS</option>
+            </select>
+            <span id="department_error"></span>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input class="input-passwords" id="password" type="password" required/>
+            <span id="password_error"></span>
+        </div>
+        <div class="form-control">
+            <label for="confirmpassword">Confirm password</label>
+            <input class="input-confirmpasswords" id="confirmpassword" type="password" required/>
+            <span id="confirmpassword_error"></span>
+        </div>
+        <div class="form-control">
+            <a href="./terms&condition.html">terms&condition </a>
+        </div>
+        <div clss="foem-control" id="Agree">
+            <input class="Agree" type="checkbox" />Agree
+        </div>
+    </div>
+    <div class="form-footer-container">
+        <div>
+            <button type="submit" class="button-primary" id="submit_btn"> submit</button>
+            <button type="rest" class="button-secondary" id="rest_btn"> rest</button>
+        </div>
+    </div>
+</div>
+</div>
+    </body>
+</html>
