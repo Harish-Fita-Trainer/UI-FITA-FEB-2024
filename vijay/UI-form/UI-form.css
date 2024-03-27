@@ -1,8 +1,9 @@
 
 .form-container{
     background: linear-gradient(45deg,dodgerblue,white,purple);
-    height: 625px;
+    height: 725px;
     width:100% ;
+    border: 5px solid black;
 }
 .form-header-container{
     display: flex;
@@ -45,7 +46,7 @@ input{
     display: flex;
     padding: 5px;
 }
-.label{
+.form-control.label{
     width: 200px;
 }
 .form-footer-container{
