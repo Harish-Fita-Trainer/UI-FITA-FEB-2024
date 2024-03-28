@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>docum</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./jquery.js"></script>
+    <link rel="stylesheet" href="./formjq.css" />
+  </head>
+  <body>
+    <div id="form-container">
+      <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" id="name"/>
+        <span id="name-error" class="error"></span>
+      </div>
+      <div class="form-control">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone"/>
+        <span id="phone-error" class="error"></span>
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" id="email"/>
+        <span id="email-error" class="error"></span>
+      </div>
+      <div class="form-control">
+        <label for="gender">Gender</label>
+        <div class="male">
+        <input type="radio" id="male" name="gender" value="male" />
+        <label>Male</label>
+        </div>
+        <div class="female">
+            <input type="radio" id="female" name="gender" value="female" />
+            <label>Female</label>
+        </div>
+        <span id="gender-error" class="error"></span>
+      </div>
+      <div class="form-control">
+        <div class="check">
+          <input type="checkbox" id="agree" /> I agree to the terms and conditions
+        </div>
+        <span id="agree-error" class="error"></span>
+      </div>
+      <div class="form-control">
+        <label for="password" >Password</label>
+        <input type="password" id="password"/>
+        <span id="password-error" class="error"></span>
+      </div>
+      <div class="form-control">
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          id="confirm-password"/>
+        <span id="confirm-password-error" class="error"></span>
+      </div>
+      <div class="form-control">
+        <button id="submit-btn">Submit</button>
+      </div>  
+    </div>
+  </body>
+</html>
