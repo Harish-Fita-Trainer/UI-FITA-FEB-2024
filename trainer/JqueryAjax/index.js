@@ -6,18 +6,29 @@ function OnDepartmentChange(event) {
     console.log("OnDepartmentChange", event.target.value);
 }
 
+function OnSuccess(list) {
+    for (let index = 0; index < list.length; index++) {
+        function removeData() {
+            $("#row_" + DataObj.id).remove();
+            if ($(".form-container #list tbody tr").length === 0) {
+                $(".form-container #list tbody")
+                    .append($('<tr/>')
+                        .addClass("no-records-row")
+                        .append($('<td/>')
+                            .attr("colspan", 4)
+                            .text("No records found")))
+            }
+        }
+        const DataObj = list[index];
 
-function OnSuccess(Data) {
-    for (let index = 0; index < Data.length; index++) {
-        const element = Data[index];
-        console.log("data", element);
         $(".form-container #list tbody")
-            .append($('<tr/>')
-            .append(
-                $('<td/>').text(element.userId), 
-                $('<td/>').text(element.id), 
-                $('<td/>').text(element.title), 
-                $('<td/>').text(element.body)
+            .append($('<tr/>').attr("id", "row_" + DataObj.id)
+                .append(
+                    $('<td/>').text(DataObj.userId),
+                    $('<td/>').text(DataObj.id),
+                    $('<td/>').text(DataObj.title),
+                    $('<td/>').append($('<button/>').text("Delete")
+                        .on("click", removeData)),
                 ))
     }
 }
