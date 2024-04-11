@@ -1,18 +1,31 @@
 import logo from './logo.svg';
-import { useState } from "react"
+import { useRef, useState } from "react"
 import './App.css';
 
 function App() {
-  const [Value, SetValue] = useState("");
-  const OnChange = function (e){
-    SetValue(e.target.value);
-    console.log("onchange0",e.target.value)
+  const [Counter, SetCounter] = useState(0);
+  var CounterValue = useRef();
+  const OnClick = function () {
+    SetCounter(prevvalue => prevvalue + 1);
+    //CounterValue.current = CounterValue.current + 1;
+
+    console.log(CounterValue);
+
   }
-  return  <div className="form-control" time={new Date().toString()} >
-    <label htmlFor="first_name">First Name</label>
-    <input type="text" id="first_name" value={Value} onChange={OnChange}/>
-   </div>
-  
+  console.log("CounterValue ", CounterValue.current?.innerText);
+
+  return <div className='form-panel'>
+    <div className="form-control" time={new Date().toString()} >
+      <h1 ref={CounterValue} className='counter-target'> {
+        Counter
+      }
+      </h1>
+    </div>
+    <div className='form-control'>
+      <button onClick={OnClick}>Increment</button>
+    </div>
+  </div>
+
 }
 
 export default App;
