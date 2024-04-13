@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import './App.css';
 
 function App() {
@@ -9,10 +9,18 @@ function App() {
     SetCounter(prevvalue => prevvalue + 1);
     //CounterValue.current = CounterValue.current + 1;
 
-    console.log(CounterValue);
 
   }
-  console.log("CounterValue ", CounterValue.current?.innerText);
+
+  useEffect(() => {
+    console.log("inside useeffect", Counter);
+
+    fetch('https://dummyjson.com/carts')
+      .then(res => res.json())  
+      .then(json => console.log(json))
+
+  }, [Counter]);
+
 
   return <div className='form-panel'>
     <div className="form-control" time={new Date().toString()} >

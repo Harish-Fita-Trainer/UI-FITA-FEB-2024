@@ -1,0 +1,2 @@
+Title : PetConnect
+objective : The main objective of the project is user can   post ads for their pet animals to selling.The interested user can contact their ads  posted user for buying the pets.The user must signup to buying or selling the pets.By using this application users can directly contact the respective ads owner so this system can avoid the third party.Additionally user can order and see the availability of pet accessories from near by pet shop.So user reduce the burden and time.
