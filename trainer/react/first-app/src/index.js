@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppUseEffect from './app-use-effect';
+import AppUseMemo from './app-use-memo';
  
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
-  <AppUseEffect />
+  <AppUseMemo />
   //</React.StrictMode>
 );
 

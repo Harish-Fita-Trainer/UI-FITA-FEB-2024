@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from "react"
 import './app-use-effect.css';
 
 export default function AppUseEffect() {
+  console.log("AppUseEffect");
   const [userslist, setuserslist] = useState([]);
 
   useEffect(() => {
     fetch('https://dummyjson.com/users')
       .then(res => res.json())
       .then(json => setuserslist(json.users))
-
   }, []);
 
   console.log("userslist", userslist)
