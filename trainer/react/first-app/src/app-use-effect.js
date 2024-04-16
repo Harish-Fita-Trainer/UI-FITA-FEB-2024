@@ -34,7 +34,7 @@ export default function AppUseEffect() {
         <tbody>
           {
             userslist.length > 0 ?
-              userslist.map(users => {
+              userslist.map(function (users) {
                 return <tr className="users-rocord" key={users.id}>
                   <td>{users.id}</td>
                   <td>{users.email}</td>
