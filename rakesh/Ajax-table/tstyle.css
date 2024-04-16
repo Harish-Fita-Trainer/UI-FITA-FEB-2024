@@ -6,7 +6,7 @@
   
 }
   thead{
-    background-color: black;
+    background-color: #04AA6D;
     color: white;
     font-size: 20px;
   }
@@ -20,13 +20,7 @@
  tr:nth-child(even) {
     background-color: #ccc;
   }
-input[type="checkbox"]{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-label{
-    font-size: 20px;
-}
-
+  tr.no-records-row td {
+    text-align: center;
+  }
 

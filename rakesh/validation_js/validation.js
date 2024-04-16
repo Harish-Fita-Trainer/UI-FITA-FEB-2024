@@ -1,7 +1,7 @@
 console.log("file loaded")
 
 function OnSave() {
-    var Name = document.getElementById("Name").value;
+    var Name = $("#Name").value;
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
     var  pwd = document.getElementById("password").value;
@@ -12,8 +12,8 @@ function OnSave() {
 //--------Validation of Name------//  
     if(Name === "")
     {
-        document.getElementById("Name_error").setAttribute("class", "failure", "failure ")
-        document.getElementById("Name_error").innerText = "Enter The name";
+        $("#Name_error").setAttribute("class", "failure")
+        $("#Name_error").innerText = "Enter The name";
     }
     else{
         document.getElementById("Name_error").innerText= ""
