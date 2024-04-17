@@ -5,12 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppUseEffect from './app-use-effect';
 import AppUseMemo from './app-use-memo';
+import { AppRouter } from './app-router-navigation';
  
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
-  <AppUseMemo />
+  <AppRouter />
   //</React.StrictMode>
 );
 
