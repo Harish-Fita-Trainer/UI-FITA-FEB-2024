@@ -1,7 +1,54 @@
+import React from "react";
 import { useEffect, useRef, useState } from "react"
 import './table-style.css';
 
-export default function AppUseEffect() {
+
+ function Userdata(){
+  const [usertable, setusertable] = useState({
+    id: '',
+    Gmail: '',
+    Firtname: '',
+    age: ''
+    });
+
+    const Addtable = (e)=>{
+      const {name, value} = e.target;
+      setusertable({ ...usertable,[name]: value});
+    };
+    return(
+      <div>
+        <label>Id</label>
+        <input type="text" name="Id" value={usertable.id} onChange={Addtable} />
+        <label>Gmail</label>
+        <input type="text" name="Gmail" value={usertable.Gmail} onChange={Addtable} />
+        <label>Firstname</label>
+        <input type="text" name="Firstname" value={usertable.Firtname} onChange={Addtable} />
+        <label>Age</label>
+        <input type="text" name="age" value={usertable.age} onChange={Addtable} />
+        <table>
+          <thead>
+            <tr>
+            <th>Id</th>
+            <th>Email Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{usertable.id}</td>
+              <td>{usertable.Gmail}</td>
+              <td>{usertable.Firtname}</td>
+              <td>{usertable.age}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    )
+
+}
+
+function AppUseEffect() {
   const [userslist, setuserslist] = useState([]);
 
   const fetchdata = ()=>{
@@ -64,3 +111,5 @@ export default function AppUseEffect() {
     </div>
   </div>
 }
+
+export { Userdata, AppUseEffect };
