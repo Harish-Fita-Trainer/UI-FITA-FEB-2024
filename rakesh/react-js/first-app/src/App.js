@@ -13,18 +13,34 @@ import './table-style.css';
 
     const Addtable = (e)=>{
       const {name, value} = e.target;
-      setusertable({ ...usertable,[name]: value});
+       setusertable({ ...usertable,[name]: value});
     };
+    const Add =(e) =>{
+      e.preventdefult();
+    }
     return(
       <div>
+        <form onSubmit={Add}>
+        <div>
         <label>Id</label>
-        <input type="text" name="Id" value={usertable.id} onChange={Addtable} />
+        <input type="text" name="id" value={usertable.id} onChange={Addtable} />
+        </div>
+        <div>
         <label>Gmail</label>
         <input type="text" name="Gmail" value={usertable.Gmail} onChange={Addtable} />
+        </div>
+        <div>
         <label>Firstname</label>
-        <input type="text" name="Firstname" value={usertable.Firtname} onChange={Addtable} />
+        <input type="text" name="Firstname" value={usertable.Firstname} onChange={Addtable} />
+        </div>
+        <div>
         <label>Age</label>
         <input type="text" name="age" value={usertable.age} onChange={Addtable} />
+        </div>
+        <div>
+          <button type="submit">ADD</button>
+        </div>
+        </form>
         <table>
           <thead>
             <tr>
@@ -38,7 +54,7 @@ import './table-style.css';
             <tr>
               <td>{usertable.id}</td>
               <td>{usertable.Gmail}</td>
-              <td>{usertable.Firtname}</td>
+              <td>{usertable.Firstname}</td>
               <td>{usertable.age}</td>
             </tr>
           </tbody>
