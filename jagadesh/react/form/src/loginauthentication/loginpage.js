@@ -11,13 +11,11 @@ export function Home() {
     const [error, setError] = useState("");
 
     const handleLogin = () => {
-        // Validate username and password
         if (!username || !password) {
             setError("Please enter username and password");
             return;
         }
 
-        // Send login request
         fetch('https://dummyjson.com/auth/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -35,13 +33,9 @@ export function Home() {
             }
         })
         .then(data => {
-            // Successful login
-            // You may want to save the token or user information in local storage or session storage
-            // For now, just navigate to the about page
             navigate("/about");
         })
         .catch(error => {
-            // Handle login errors
             setError("Login failed. Please check your credentials.");
         });
     };
