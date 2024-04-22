@@ -62,4 +62,4 @@ export function Home() {
             </div>
         </div>
     );
-}
+}//endz
