@@ -1,5 +1,5 @@
 
-export default function Input({ type = "text", text, onChange, value }) {
+export default function Input({type,text, onChange, value }) {
 
     return <div className="form-control">
         <label>{text}</label>
