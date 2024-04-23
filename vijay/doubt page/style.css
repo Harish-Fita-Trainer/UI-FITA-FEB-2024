@@ -1,0 +1,75 @@
+.form-container{
+    background: linear-gradient(45deg,dodgerblue,white,purple);
+    height: 625px;
+    width:100% ;
+}
+.form-header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100% ;
+    margin:5px ;
+}
+.form-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    width:140px;
+    margin: 0.2cm;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+input{
+    font-size: 1.5em ;
+}
+.form-footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+button.button-primary{
+    color: black;
+    border: 10px;
+    border-radius: 15px;
+    font-size: 20px ;
+    background-color: silver;
+    justify-content: space-evenly;
+
+}
+button.button-primary:hover{
+    letter-spacing: 3px;
+    background-color: orange;
+    border: 20px ;
+    border-radius: 15px;
+    font-size:  20px;
+    color:white;
+    box-shadow: black 0px 7px 29px 10px;
+}
+button.button-secondary{
+    color:black ;
+    border: 20px;
+    border-radius: 15px;
+    font-size: 20px ;
+    background-color: silver;
+    justify-content: space-evenly;
+}
+button.button-secondary:hover{
+    letter-spacing: 3px;
+    background-color: orange;
+    border: 20px ;
+    border-radius: 15px;
+    font-size:  20px;
+    color:white;
+    box-shadow: black 0px 7px 29px 10px;
+}
+.success {
+    color: green;
+}
+
+.failure {
+    color: red;
+}
