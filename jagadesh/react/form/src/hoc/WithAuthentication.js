@@ -9,4 +9,4 @@ export default function Withathentication(Component)
         return <Component/>;
 
     };
-}//hoc
+}//hoc function
