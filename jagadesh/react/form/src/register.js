@@ -16,7 +16,7 @@ export default function Register() {
     <div>
       <div>
         <label>FirstName</label>
-        <input type="text" onChange={(e) => { setfirstname(e.target.value) }} />
+        <input type="text" onChange={(e) => { setfirstname(e.target.value)  }} />
       </div>
       <div>
         <label>LasttName</label>
