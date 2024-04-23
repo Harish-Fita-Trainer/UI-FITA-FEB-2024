@@ -6,12 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import AppUseEffect from './app-use-effect';
 import AppUseMemo from './app-use-memo';
 import { AppRouter } from './app-router-navigation';
+import AppContext from './app-use-context';
  
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
-  <AppRouter />
+  <AppContext />
   //</React.StrictMode>
 );
 

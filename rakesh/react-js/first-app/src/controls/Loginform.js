@@ -2,12 +2,14 @@ import { useState } from "react"
 import Int from "./input"
 import './formstyle.css';
 //import Button from "./button";
-import { BrowserRouter as router, Route, Link, Navigate, useHistory} from 'react-router-dom';
+import { BrowserRouter as router, Route, Link, Navigate, useHistory, BrowserRouter } from 'react-router-dom';
+import Homepage from "./Home";
+
 export default function Loginpage() {
 
     const [username, setusername] = useState("");
     const [password, setpassword] = useState("");
-    const history = useHistory()
+    const history = useHistory();
     const [error, seterror] = useState("");
 
     let Login = () => {
@@ -26,7 +28,7 @@ export default function Loginpage() {
                 return res.json()
             })
             .then(res => {
-                if ((!res.ok)&&(username.length > 1 && password.length >1)) {
+                if ((!res.ok) && (username.length > 1 && password.length > 1)) {
                     console.log("sucuss");
                     history.push('/Home')
 
@@ -55,10 +57,21 @@ export default function Loginpage() {
                 <button type="button" onClick={Login}>Button</button>
             </div>
         </div>
+    );
+};
 
-
-    )
-}
+export const Switch = () => {
+    return (
+        <BrowserRouter>
+            <router>
+                <switch>
+                    <Route exact path="/" Component={Loginpage} />
+                    <Route path="/Home" Component={Homepage} />
+                </switch>
+            </router>
+        </BrowserRouter>
+    );
+};
 
 
 
