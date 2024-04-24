@@ -37,20 +37,20 @@ export default function AppuseEffect(){
             <label>Enter Email</label>
             <input type="text" onChange={e =>setemail(e.target.value)}></input>
             </div>
-            <>
+            <div>
             <label>Enter Name</label>
             <input type="text" onChange={e =>setname(e.target.value)}></input>
-            </>
-            <>
+            </div>
+            <div>
             <label>Enter Password</label>
             <input type="text" onChange={e =>setid(e.target.value)}></input>
-            </>
-            <>
+            </div>
+            <div>
             <button onClick={adddetails}>Add</button>
-            </>
-            <>
+            </div>
+            <div>
             <button  onClick={clear}>Remove</button>
-            </>
+            </div>
         </div>
         <table id="list">
         <thead>
