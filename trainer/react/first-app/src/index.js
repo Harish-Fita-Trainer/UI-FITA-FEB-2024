@@ -8,12 +8,13 @@ import AppUseMemo from './app-use-memo';
 import { AppRouter } from './app-router-navigation';
 import AppContext from './app-use-context';
 import AppUseCustomFiles from './app-use-custom-files';
- 
+import { AppStoreRedux } from './app-store-redux';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
-  <AppUseCustomFiles />
+  <AppStoreRedux />
   //</React.StrictMode>
 );
 
