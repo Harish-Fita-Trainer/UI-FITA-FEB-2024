@@ -1,0 +1,1 @@
+export const SelectCartCount = (state) => state.counter.CartCount; 
