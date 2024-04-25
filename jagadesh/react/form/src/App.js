@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Profile from './component/profile';
+
 
 function App() {
   return (
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+
