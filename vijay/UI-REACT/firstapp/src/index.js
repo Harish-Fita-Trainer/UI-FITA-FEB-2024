@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppuseEffect from './Table';
+import { AppStoreRedux } from './store/app-store-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <AppuseEffect />
-  </React.StrictMode>
+  //<React.StrictMode>
+    <AppStoreRedux/>
+  //</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
